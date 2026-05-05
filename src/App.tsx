@@ -164,6 +164,403 @@ const trainingNeeds = [
   "Custom company training"
 ];
 
+type Language = "en" | "fr";
+
+const siteCopy = {
+  en: {
+    languageLabel: "Language",
+    navItems,
+    navCta: "Book Free Demo",
+    menuOpen: "Open navigation menu",
+    menuClose: "Close navigation menu",
+    hero: {
+      eyebrow: "Business English Morocco - In-person company training",
+      title: "Business English Training That Makes Your Team Sound Professional",
+      subtitle: "Practical in-person English courses for logistics, transport, supply chain, and corporate teams.",
+      text:
+        "Teacher's Talk helps employees communicate clearly and confidently in real workplace situations: emails, phone calls, shipment updates, delivery delays, meetings, complaints, and client communication.",
+      primary: "Book a Free 1-Hour Demo",
+      secondary: "View 30-Hour Program",
+      stats: [
+        ["30h", "In-person course"],
+        ["8-14", "Ideal group size"],
+        ["A2+", "Best starting level"]
+      ]
+    },
+    trustItems,
+    problem: {
+      eyebrow: "The hidden cost",
+      title: "English Mistakes Cost More Than You Think",
+      text:
+        "In logistics and business, unclear English does not stay small. It slows decisions, creates friction with clients, and makes capable teams sound less professional than they are.",
+      cardText: "A small language gap can create delay, rework, or a weaker company image in front of clients.",
+      items: problemItems
+    },
+    solution: {
+      eyebrow: "The solution",
+      title: "Teacher's Talk Turns English Into a Business Tool",
+      text:
+        "This is not general English. It is practical, job-specific communication training based on real company situations and the pressure your teams already know.",
+      cards: solutionCards
+    },
+    program: {
+      eyebrow: "Signature program",
+      title: "30-Hour Logistics Business English Program",
+      text: "A focused in-person English training program built for logistics companies and corporate teams that need professional communication fast.",
+      facts: [
+        ["Format", "30 hours in-person"],
+        ["Schedule", "3 sessions/week x 2 hours x 5 weeks"],
+        ["Ideal group", "8 to 14 employees"],
+        ["Best level", "A2+ to B1/B2 employees"]
+      ],
+      modules
+    },
+    demo: {
+      eyebrow: "Free company preview",
+      title: "Start With a Free 1-Hour Demo Lesson",
+      text:
+        "Before committing to the full program, your company can book a free 1-hour demo session. We present the course, show real logistics communication examples, and give your team a practical sample lesson.",
+      cta: "Schedule the Free Demo",
+      includes: demoIncludes
+    },
+    sectors: {
+      eyebrow: "Target sectors",
+      title: "Built for Teams That Communicate Under Pressure",
+      text: "The course is designed for companies where clear English has a direct impact on service quality, speed, and client confidence.",
+      items: sectors
+    },
+    method: {
+      eyebrow: "Company-focused method",
+      title: "Our Method: Practical, Measurable, Company-Focused",
+      text: "Teacher's Talk combines a professional training process with the flexibility your company needs.",
+      steps: methodSteps
+    },
+    beforeAfter: {
+      eyebrow: "Visible transformation",
+      title: "From Unclear Messages to Professional Client Communication",
+      text: "Your employees do not need abstract theory. They need language they can use the same day with clients, partners, and managers.",
+      before: "Before",
+      beforeExample: "Shipment late. Customs problem. We send soon.",
+      beforeText: "Short, unclear, and risky for client confidence.",
+      after: "After",
+      afterExample:
+        "Dear Mr. Ahmed, we apologize for the inconvenience. Your shipment has been delayed due to customs clearance. Our team is following up and will update you as soon as we receive confirmation.",
+      afterText: "Professional, specific, and reassuring."
+    },
+    why: {
+      eyebrow: "Why Teacher's Talk",
+      title: "Why Companies Choose Teacher's Talk",
+      text: "The training is premium because it is specific, practical, measurable, and delivered in person by teachers who understand professional communication.",
+      reasons
+    },
+    testimonials: {
+      eyebrow: "Credible results",
+      title: "What Managers Notice First",
+      text: "The difference is practical: clearer emails, calmer calls, better operational updates, and stronger confidence with clients.",
+      items: testimonials
+    },
+    finalCta: {
+      title: "Ready to Improve Your Team's Business English?",
+      text: "Book a short meeting with Teacher's Talk and get a free 1-hour demo lesson for your team.",
+      primary: "Book Free Demo",
+      secondary: "Contact Us"
+    },
+    contact: {
+      eyebrow: "Contact",
+      title: "Book a Meeting or Request the Free Demo",
+      text: "Tell us what your team needs. Teacher's Talk will help you choose the right starting point for practical Business English training.",
+      details: [
+        { icon: Phone, label: "Phone", value: "0700318140" },
+        { icon: MailCheck, label: "Email", value: "info@teacherstalk.org" },
+        { icon: MapPin, label: "Location", value: "Rabat-Sale-Kenitra, Morocco" },
+        { icon: Building2, label: "Availability", value: "In-person company training" }
+      ],
+      labels: {
+        name: "Name",
+        company: "Company",
+        email: "Email",
+        phone: "Phone",
+        need: "Preferred training need",
+        needPlaceholder: "Select a training need",
+        message: "Message",
+        messagePlaceholder: "Tell us about your team, sector, and training goals.",
+        submit: "Send Demo Request",
+        sending: "Sending Request...",
+        successTitle: "Request sent.",
+        errorTitle: "Request not sent."
+      },
+      errors: {
+        name: "Please enter your name.",
+        company: "Please enter your company name.",
+        email: "Please enter a valid email.",
+        phone: "Please enter your phone number.",
+        need: "Please select a training need.",
+        message: "Please add a short message."
+      },
+      success: "Thank you. Your request was sent and Teacher's Talk can now follow up with demo details.",
+      failure: "We could not send the request right now. Please try again, email info@teacherstalk.org, or use the WhatsApp button.",
+      needs: trainingNeeds
+    },
+    footer: {
+      text: "Premium Business English training for logistics, transport, supply chain, customer service, and corporate teams.",
+      quickLinks: "Quick links",
+      services: "Services",
+      serviceLinks: [
+        { label: "Logistics English course", id: "program" },
+        { label: "Corporate English training", id: "program" },
+        { label: "Free demo lesson", id: "demo" },
+        { label: "Company progress report", id: "method" }
+      ],
+      contactDetails: "Contact details",
+      rights: "All rights reserved.",
+      keywords: "Business English Morocco - Professional English communication - In-person English course"
+    },
+    floating: {
+      backToTop: "Back to top",
+      whatsapp: "Contact Teacher's Talk on WhatsApp"
+    }
+  },
+  fr: {
+    languageLabel: "Langue",
+    navItems: [
+      ["Accueil", "home"],
+      ["Programme", "program"],
+      ["Secteurs", "sectors"],
+      ["Démo", "demo"],
+      ["Méthode", "method"],
+      ["Contact", "contact"]
+    ],
+    navCta: "Réserver une démo",
+    menuOpen: "Ouvrir le menu",
+    menuClose: "Fermer le menu",
+    hero: {
+      eyebrow: "Business English Maroc - Formation en entreprise en présentiel",
+      title: "Formation Business English pour rendre votre équipe plus professionnelle",
+      subtitle: "Cours d'anglais pratiques en présentiel pour les équipes logistiques, transport, supply chain et entreprises.",
+      text:
+        "Teacher's Talk aide vos employés à communiquer clairement et avec confiance dans des situations professionnelles réelles : emails, appels, suivi des expéditions, retards de livraison, réunions, réclamations et communication client.",
+      primary: "Réserver une démo gratuite d'une heure",
+      secondary: "Voir le programme de 30 heures",
+      stats: [
+        ["30h", "Formation en présentiel"],
+        ["8-14", "Taille idéale du groupe"],
+        ["A2+", "Niveau de départ conseillé"]
+      ]
+    },
+    trustItems: [
+      { icon: GraduationCap, label: "Formateurs expérimentés" },
+      { icon: Target, label: "Formation orientée travail" },
+      { icon: Building2, label: "Cours en entreprise" },
+      { icon: PlayCircle, label: "Leçon démo gratuite" },
+      { icon: Award, label: "Certificats et rapports" }
+    ],
+    problem: {
+      eyebrow: "Le coût caché",
+      title: "Les erreurs en anglais coûtent plus cher que vous ne le pensez",
+      text:
+        "Dans la logistique et les affaires, un anglais peu clair ne reste pas un petit problème. Il ralentit les décisions, crée des tensions avec les clients et rend les équipes moins professionnelles.",
+      cardText: "Un petit manque linguistique peut créer des retards, du travail à refaire ou une image moins solide devant les clients.",
+      items: [
+        "Instructions de livraison mal comprises",
+        "Emails clients peu professionnels",
+        "Mauvaise gestion des retards",
+        "Appels téléphoniques confus",
+        "Communication internationale faible",
+        "Perte de confiance des clients"
+      ]
+    },
+    solution: {
+      eyebrow: "La solution",
+      title: "Teacher's Talk transforme l'anglais en outil professionnel",
+      text:
+        "Ce n'est pas de l'anglais général. C'est une formation pratique, adaptée au poste, basée sur des situations réelles et sur la pression que vos équipes connaissent déjà.",
+      cards: [
+        { icon: MailCheck, title: "Emails professionnels", text: "Objets clairs, réponses soignées, mises à jour, excuses et relances." },
+        { icon: MessageSquareText, title: "Appels et WhatsApp", text: "Scripts pratiques pour les confirmations, les urgences et la coordination client." },
+        { icon: Truck, title: "Vocabulaire logistique", text: "Transport, expédition, douane, entrepôt, documents et langage opérationnel." },
+        { icon: Headphones, title: "Réclamations clients", text: "Réponses calmes et professionnelles pour protéger la confiance en cas de problème." },
+        { icon: PackageCheck, title: "Suivi des livraisons", text: "Communication précise sur les délais, documents manquants et statuts d'expédition." },
+        { icon: Presentation, title: "Réunions et rapports", text: "Prise de parole plus confiante pour les réunions, mises à jour et synthèses." }
+      ]
+    },
+    program: {
+      eyebrow: "Programme signature",
+      title: "Programme Business English Logistique de 30 heures",
+      text: "Une formation intensive en présentiel conçue pour les entreprises logistiques et les équipes qui ont besoin d'une communication professionnelle rapidement.",
+      facts: [
+        ["Format", "30 heures en présentiel"],
+        ["Rythme", "3 séances/semaine x 2 heures x 5 semaines"],
+        ["Groupe idéal", "8 à 14 employés"],
+        ["Niveau conseillé", "A2+ à B1/B2"]
+      ],
+      modules: [
+        ["Présentations professionnelles", "Présenter les rôles, services, responsabilités et départements avec confiance."],
+        ["Vocabulaire logistique essentiel", "Utiliser correctement les termes du transport, de la supply chain, de l'entrepôt et de l'expédition."],
+        ["Appels et communication WhatsApp", "Gérer les conversations opérationnelles, confirmations et mises à jour urgentes."],
+        ["Emails logistiques professionnels", "Rédiger des emails clairs pour les clients, partenaires, fournisseurs et équipes internes."],
+        ["Retards, réclamations et résolution de problèmes", "Expliquer les problèmes clairement, s'excuser avec professionnalisme et proposer les prochaines étapes."],
+        ["Réunions et mises à jour opérationnelles", "Partager les statuts, poser des questions de clarification et rendre compte des progrès."],
+        ["Devis et communication client", "Discuter des prix, délais, documents et détails de service avec professionnalisme."],
+        ["Simulation finale et évaluation", "Appliquer tout le parcours dans des scénarios réalistes et recevoir un feedback mesuré."]
+      ]
+    },
+    demo: {
+      eyebrow: "Aperçu gratuit pour l'entreprise",
+      title: "Commencez par une leçon démo gratuite d'une heure",
+      text:
+        "Avant de vous engager dans le programme complet, votre entreprise peut réserver une session démo gratuite d'une heure. Nous présentons le cours, montrons des exemples réels de communication logistique et proposons une activité pratique.",
+      cta: "Planifier la démo gratuite",
+      includes: [
+        "Discussion rapide sur les besoins",
+        "Activité réelle d'anglais logistique",
+        "Exemple d'amélioration d'email",
+        "Jeu de rôle oral",
+        "Présentation du programme",
+        "Questions-réponses avec RH ou managers"
+      ]
+    },
+    sectors: {
+      eyebrow: "Secteurs ciblés",
+      title: "Conçu pour les équipes qui communiquent sous pression",
+      text: "Le cours est conçu pour les entreprises où un anglais clair a un impact direct sur la qualité de service, la rapidité et la confiance client.",
+      items: [
+        { icon: Truck, title: "Entreprises logistiques" },
+        { icon: PackageCheck, title: "Entreprises de transport" },
+        { icon: Warehouse, title: "Équipes d'entrepôt" },
+        { icon: BarChart3, title: "Départements supply chain" },
+        { icon: Headphones, title: "Équipes service client" },
+        { icon: Send, title: "Import/export" },
+        { icon: Factory, title: "Entreprises industrielles" },
+        { icon: BriefcaseBusiness, title: "Équipes administratives" }
+      ]
+    },
+    method: {
+      eyebrow: "Méthode orientée entreprise",
+      title: "Notre méthode : pratique, mesurable, adaptée à l'entreprise",
+      text: "Teacher's Talk combine un processus de formation professionnel avec la flexibilité dont votre entreprise a besoin.",
+      steps: [
+        { icon: ClipboardCheck, title: "Analyse des besoins", text: "Nous identifions les rôles, difficultés de communication, documents et situations que votre équipe gère chaque semaine." },
+        { icon: BadgeCheck, title: "Test de niveau", text: "Les employés sont regroupés par niveau pratique pour que la formation soit utile et efficace dès le premier jour." },
+        { icon: Users, title: "Formation en présentiel", text: "Votre équipe pratique emails, appels, réunions et scénarios professionnels avec un formateur expérimenté." },
+        { icon: Award, title: "Évaluation et rapport", text: "Les managers reçoivent certificats, suivi des progrès et une vision pratique de l'amélioration de l'équipe." }
+      ]
+    },
+    beforeAfter: {
+      eyebrow: "Transformation visible",
+      title: "Des messages flous à une communication client professionnelle",
+      text: "Vos employés n'ont pas besoin de théorie abstraite. Ils ont besoin d'un langage utilisable le jour même avec clients, partenaires et managers.",
+      before: "Avant",
+      beforeExample: "Shipment late. Customs problem. We send soon.",
+      beforeText: "Court, peu clair et risqué pour la confiance client.",
+      after: "Après",
+      afterExample:
+        "Dear Mr. Ahmed, we apologize for the inconvenience. Your shipment has been delayed due to customs clearance. Our team is following up and will update you as soon as we receive confirmation.",
+      afterText: "Professionnel, précis et rassurant."
+    },
+    why: {
+      eyebrow: "Pourquoi Teacher's Talk",
+      title: "Pourquoi les entreprises choisissent Teacher's Talk",
+      text: "La formation est premium parce qu'elle est spécifique, pratique, mesurable et assurée en présentiel par des enseignants qui comprennent la communication professionnelle.",
+      reasons: [
+        "Formateurs expérimentés",
+        "Spécialisation Business English",
+        "Scénarios professionnels pratiques",
+        "Exemples personnalisés",
+        "Engagement en présentiel",
+        "Suivi des progrès",
+        "Certificats",
+        "Rapport professionnel pour l'entreprise"
+      ]
+    },
+    testimonials: {
+      eyebrow: "Résultats concrets",
+      title: "Ce que les managers remarquent d'abord",
+      text: "La différence est pratique : emails plus clairs, appels plus calmes, meilleures mises à jour opérationnelles et plus de confiance avec les clients.",
+      items: [
+        {
+          quote:
+            "La démo était pratique dès la première minute. Notre équipe a immédiatement vu comment un meilleur anglais pouvait améliorer les mises à jour client et la coordination interne.",
+          name: "Nadia",
+          role: "Responsable RH, Groupe logistique"
+        },
+        {
+          quote:
+            "Teacher's Talk s'est concentré sur le langage exact que notre équipe opérationnelle utilise chaque jour : retards, documents, appels et problèmes de livraison.",
+          name: "Youssef",
+          role: "Responsable opérations, Entreprise de transport"
+        },
+        {
+          quote: "La formation a donné à notre service client plus de structure et de confiance pour écrire aux clients internationaux.",
+          name: "Salma",
+          role: "Superviseure service client"
+        }
+      ]
+    },
+    finalCta: {
+      title: "Prêt à améliorer le Business English de votre équipe ?",
+      text: "Réservez un court rendez-vous avec Teacher's Talk et obtenez une leçon démo gratuite d'une heure pour votre équipe.",
+      primary: "Réserver une démo",
+      secondary: "Contactez-nous"
+    },
+    contact: {
+      eyebrow: "Contact",
+      title: "Réserver un rendez-vous ou demander la démo gratuite",
+      text: "Expliquez-nous les besoins de votre équipe. Teacher's Talk vous aidera à choisir le bon point de départ pour une formation Business English pratique.",
+      details: [
+        { icon: Phone, label: "Téléphone", value: "0700318140" },
+        { icon: MailCheck, label: "Email", value: "info@teacherstalk.org" },
+        { icon: MapPin, label: "Localisation", value: "Rabat-Salé-Kénitra, Maroc" },
+        { icon: Building2, label: "Disponibilité", value: "Formation en entreprise en présentiel" }
+      ],
+      labels: {
+        name: "Nom",
+        company: "Entreprise",
+        email: "Email",
+        phone: "Téléphone",
+        need: "Besoin de formation",
+        needPlaceholder: "Sélectionnez un besoin",
+        message: "Message",
+        messagePlaceholder: "Parlez-nous de votre équipe, secteur et objectifs.",
+        submit: "Envoyer la demande",
+        sending: "Envoi en cours...",
+        successTitle: "Demande envoyée.",
+        errorTitle: "Demande non envoyée."
+      },
+      errors: {
+        name: "Veuillez entrer votre nom.",
+        company: "Veuillez entrer le nom de votre entreprise.",
+        email: "Veuillez entrer un email valide.",
+        phone: "Veuillez entrer votre numéro de téléphone.",
+        need: "Veuillez sélectionner un besoin de formation.",
+        message: "Veuillez ajouter un court message."
+      },
+      success: "Merci. Votre demande a été envoyée et Teacher's Talk pourra vous contacter pour les détails de la démo.",
+      failure: "Impossible d'envoyer la demande pour le moment. Réessayez, envoyez un email à info@teacherstalk.org ou utilisez le bouton WhatsApp.",
+      needs: ["Anglais logistique", "Business English", "Rédaction d'emails", "Communication téléphonique", "Réunions et présentations", "Formation personnalisée"]
+    },
+    footer: {
+      text: "Formation Business English premium pour les équipes logistiques, transport, supply chain, service client et entreprises.",
+      quickLinks: "Liens rapides",
+      services: "Services",
+      serviceLinks: [
+        { label: "Cours d'anglais logistique", id: "program" },
+        { label: "Formation Corporate English", id: "program" },
+        { label: "Leçon démo gratuite", id: "demo" },
+        { label: "Rapport de progrès", id: "method" }
+      ],
+      contactDetails: "Coordonnées",
+      rights: "Tous droits réservés.",
+      keywords: "Business English Maroc - Communication professionnelle en anglais - Formation en présentiel"
+    },
+    floating: {
+      backToTop: "Retour en haut",
+      whatsapp: "Contacter Teacher's Talk sur WhatsApp"
+    }
+  }
+} as const;
+
+type SiteCopy = (typeof siteCopy)[Language];
+
 const heroSlides = [
   {
     type: "video",
@@ -558,7 +955,35 @@ function HeroMedia() {
   );
 }
 
-function Navbar() {
+function LanguageToggle({
+  language,
+  setLanguage,
+  label
+}: {
+  language: Language;
+  setLanguage: (language: Language) => void;
+  label: string;
+}) {
+  return (
+    <div className="flex items-center rounded-full border border-zinc-200 bg-white/80 p-1 shadow-sm" aria-label={label}>
+      {(["en", "fr"] as const).map((item) => (
+        <button
+          key={item}
+          type="button"
+          className={`rounded-full px-3 py-1.5 text-xs font-black uppercase transition focus-ring ${
+            language === item ? "bg-brand-ink text-white shadow-sm" : "text-zinc-500 hover:bg-red-50 hover:text-brand-red"
+          }`}
+          onClick={() => setLanguage(item)}
+          aria-pressed={language === item}
+        >
+          {item}
+        </button>
+      ))}
+    </div>
+  );
+}
+
+function Navbar({ copy, language, setLanguage }: { copy: SiteCopy; language: Language; setLanguage: (language: Language) => void }) {
   const [open, setOpen] = useState(false);
 
   const handleNav = (id: string) => {
@@ -571,7 +996,7 @@ function Navbar() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between rounded-full border border-white/70 bg-white/72 px-3 py-2 shadow-[0_18px_65px_rgba(23,23,23,.12)] backdrop-blur-2xl">
         <Logo compact />
         <div className="hidden items-center gap-1 lg:flex">
-          {navItems.map(([label, id]) => (
+          {copy.navItems.map(([label, id]) => (
             <button
               key={id}
               onClick={() => handleNav(id)}
@@ -581,15 +1006,16 @@ function Navbar() {
             </button>
           ))}
         </div>
-        <div className="hidden lg:block">
+        <div className="hidden items-center gap-3 lg:flex">
+          <LanguageToggle language={language} setLanguage={setLanguage} label={copy.languageLabel} />
           <PremiumButton target="demo" icon={false}>
-            Book Free Demo
+            {copy.navCta}
           </PremiumButton>
         </div>
         <button
           className="grid h-11 w-11 place-items-center rounded-full bg-brand-ink text-white shadow-lg focus-ring lg:hidden"
           onClick={() => setOpen((value) => !value)}
-          aria-label={open ? "Close navigation menu" : "Open navigation menu"}
+          aria-label={open ? copy.menuClose : copy.menuOpen}
           aria-expanded={open}
         >
           {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -604,7 +1030,10 @@ function Navbar() {
             animate={{ opacity: 1, y: 0, height: "auto" }}
             exit={{ opacity: 0, y: -12, height: 0 }}
           >
-            {navItems.map(([label, id]) => (
+            <div className="mb-2 px-1">
+              <LanguageToggle language={language} setLanguage={setLanguage} label={copy.languageLabel} />
+            </div>
+            {copy.navItems.map(([label, id]) => (
               <button
                 key={id}
                 onClick={() => handleNav(id)}
@@ -615,7 +1044,7 @@ function Navbar() {
               </button>
             ))}
             <button className="btn-primary mt-2 w-full justify-center focus-ring" onClick={() => handleNav("demo")}>
-              <span>Book Free Demo</span>
+              <span>{copy.navCta}</span>
               <ArrowRight className="h-4 w-4" />
             </button>
           </motion.div>
@@ -625,7 +1054,7 @@ function Navbar() {
   );
 }
 
-function Hero() {
+function Hero({ copy }: { copy: SiteCopy }) {
   return (
     <section id="home" className="relative overflow-hidden pb-16 pt-32 sm:pb-24 lg:min-h-screen lg:pt-40">
       <div className="ambient-field left-[-16rem] top-[-12rem] h-[36rem] w-[36rem] bg-red-200/45" />
@@ -645,27 +1074,22 @@ function Hero() {
             variants={fadeUp}
             className="text-balance text-4xl font-black leading-[1.04] text-brand-ink sm:text-5xl lg:text-7xl"
           >
-            Business English Training That Makes Your Team Sound Professional
+            {copy.hero.title}
           </motion.h1>
           <motion.p variants={fadeUp} className="mt-6 text-xl font-semibold leading-8 text-zinc-700">
-            Practical in-person English courses for logistics, transport, supply chain, and corporate teams.
+            {copy.hero.subtitle}
           </motion.p>
           <motion.p variants={fadeUp} className="mt-5 max-w-2xl text-base leading-8 text-zinc-600 sm:text-lg">
-            Teacher&apos;s Talk helps employees communicate clearly and confidently in real workplace situations:
-            emails, phone calls, shipment updates, delivery delays, meetings, complaints, and client communication.
+            {copy.hero.text}
           </motion.p>
           <motion.div variants={fadeUp} className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <PremiumButton target="demo">Book a Free 1-Hour Demo</PremiumButton>
+            <PremiumButton target="demo">{copy.hero.primary}</PremiumButton>
             <PremiumButton target="program" variant="secondary">
-              View 30-Hour Program
+              {copy.hero.secondary}
             </PremiumButton>
           </motion.div>
           <motion.div variants={fadeUp} className="mt-9 grid max-w-xl grid-cols-3 gap-3">
-            {[
-              ["30h", "In-person course"],
-              ["8-14", "Ideal group size"],
-              ["A2+", "Best starting level"]
-            ].map(([metric, label]) => (
+            {copy.hero.stats.map(([metric, label]) => (
               <div key={metric} className="rounded-2xl border border-white/70 bg-white/65 p-4 shadow-sm backdrop-blur">
                 <p className="text-2xl font-black text-brand-red">{metric}</p>
                 <p className="mt-1 text-xs font-bold uppercase text-zinc-500">{label}</p>
@@ -681,7 +1105,7 @@ function Hero() {
   );
 }
 
-function TrustBar() {
+function TrustBar({ copy }: { copy: SiteCopy }) {
   return (
     <section aria-label="Teacher's Talk advantages" className="relative z-20 -mt-6 px-4">
       <motion.div
@@ -691,7 +1115,7 @@ function TrustBar() {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        {trustItems.map(({ icon: Icon, label }) => (
+        {copy.trustItems.map(({ icon: Icon, label }) => (
           <div key={label} className="flex items-center gap-3 rounded-3xl px-4 py-4 transition hover:bg-red-50/70">
             <span className="grid h-10 w-10 place-items-center rounded-2xl bg-red-50 text-brand-red">
               <Icon className="h-5 w-5" />
@@ -704,18 +1128,18 @@ function TrustBar() {
   );
 }
 
-function ProblemSection() {
+function ProblemSection({ copy }: { copy: SiteCopy }) {
   return (
     <section className="section-space relative overflow-hidden">
       <div className="ambient-field right-[-18rem] top-20 h-[32rem] w-[32rem] bg-red-100/70" />
       <div className="container-grid relative">
         <SectionHeading
-          eyebrow="The hidden cost"
-          title="English Mistakes Cost More Than You Think"
-          text="In logistics and business, unclear English does not stay small. It slows decisions, creates friction with clients, and makes capable teams sound less professional than they are."
+          eyebrow={copy.problem.eyebrow}
+          title={copy.problem.title}
+          text={copy.problem.text}
         />
         <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          {problemItems.map((item, index) => (
+          {copy.problem.items.map((item, index) => (
             <motion.div
               key={item}
               className="group relative overflow-hidden rounded-[2rem] border border-red-100 bg-gradient-to-br from-white via-white to-red-50/80 p-6 shadow-[0_24px_70px_rgba(23,23,23,.1)] transition duration-300 hover:-translate-y-1 hover:border-red-300 hover:shadow-[0_26px_80px_rgba(227,25,25,.18)]"
@@ -731,7 +1155,7 @@ function ProblemSection() {
               </span>
               <h3 className="mt-5 text-lg font-black text-brand-ink">{item}</h3>
               <p className="mt-3 text-sm font-medium leading-7 text-zinc-700">
-                A small language gap can create delay, rework, or a weaker company image in front of clients.
+                {copy.problem.cardText}
               </p>
             </motion.div>
           ))}
@@ -741,18 +1165,18 @@ function ProblemSection() {
   );
 }
 
-function SolutionSection() {
+function SolutionSection({ copy }: { copy: SiteCopy }) {
   return (
     <section className="section-space bg-brand-ink text-white">
       <div className="container-grid">
         <SectionHeading
-          eyebrow="The solution"
-          title="Teacher's Talk Turns English Into a Business Tool"
-          text="This is not general English. It is practical, job-specific communication training based on real company situations and the pressure your teams already know."
+          eyebrow={copy.solution.eyebrow}
+          title={copy.solution.title}
+          text={copy.solution.text}
           tone="dark"
         />
         <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          {solutionCards.map(({ icon, title, text }, index) => (
+          {copy.solution.cards.map(({ icon, title, text }, index) => (
             <motion.div
               key={title}
               className="dark-card p-6"
@@ -772,7 +1196,7 @@ function SolutionSection() {
   );
 }
 
-function ProgramSection() {
+function ProgramSection({ copy }: { copy: SiteCopy }) {
   return (
     <section id="program" className="section-space relative overflow-hidden scroll-mt-28">
       <div className="ambient-field left-[-18rem] top-10 h-[30rem] w-[30rem] bg-red-100/80" />
@@ -781,17 +1205,12 @@ function ProgramSection() {
           <div className="lg:sticky lg:top-32">
             <SectionHeading
               align="left"
-              eyebrow="Signature program"
-              title="30-Hour Logistics Business English Program"
-              text="A focused in-person English training program built for logistics companies and corporate teams that need professional communication fast."
+              eyebrow={copy.program.eyebrow}
+              title={copy.program.title}
+              text={copy.program.text}
             />
             <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
-              {[
-                ["Format", "30 hours in-person"],
-                ["Schedule", "3 sessions/week x 2 hours x 5 weeks"],
-                ["Ideal group", "8 to 14 employees"],
-                ["Best level", "A2+ to B1/B2 employees"]
-              ].map(([label, value]) => (
+              {copy.program.facts.map(([label, value]) => (
                 <div
                   key={label}
                   className="flex items-start gap-4 rounded-[2rem] border border-red-100 bg-gradient-to-br from-white via-white to-red-50/75 p-5 shadow-[0_20px_58px_rgba(23,23,23,.09)] transition duration-300 hover:-translate-y-1 hover:border-red-300 hover:shadow-[0_24px_70px_rgba(227,25,25,.16)]"
@@ -811,7 +1230,7 @@ function ProgramSection() {
           <div className="relative">
             <div className="absolute left-6 top-6 bottom-6 hidden w-px bg-gradient-to-b from-brand-red via-red-200 to-transparent sm:block" />
             <div className="grid gap-4">
-              {modules.map(([title, text], index) => (
+              {copy.program.modules.map(([title, text], index) => (
                 <motion.div
                   key={title}
                   className="relative overflow-hidden rounded-[2rem] border border-red-100 bg-gradient-to-br from-white via-white to-red-50/70 p-5 shadow-[0_22px_64px_rgba(23,23,23,.09)] transition duration-300 hover:-translate-y-1 hover:border-red-300 hover:shadow-[0_26px_78px_rgba(227,25,25,.16)] sm:ml-12"
@@ -839,7 +1258,7 @@ function ProgramSection() {
   );
 }
 
-function DemoSection() {
+function DemoSection({ copy }: { copy: SiteCopy }) {
   return (
     <section id="demo" className="section-space scroll-mt-28">
       <div className="container-grid">
@@ -855,21 +1274,20 @@ function DemoSection() {
             <div>
               <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-2 text-xs font-black uppercase">
                 <CalendarCheck className="h-4 w-4" />
-                Free company preview
+                {copy.demo.eyebrow}
               </p>
-              <h2 className="text-balance text-3xl font-black leading-tight sm:text-5xl">Start With a Free 1-Hour Demo Lesson</h2>
+              <h2 className="text-balance text-3xl font-black leading-tight sm:text-5xl">{copy.demo.title}</h2>
               <p className="mt-6 text-lg leading-8 text-red-50">
-                Before committing to the full program, your company can book a free 1-hour demo session. We present
-                the course, show real logistics communication examples, and give your team a practical sample lesson.
+                {copy.demo.text}
               </p>
               <div className="mt-8">
                 <PremiumButton target="contact" variant="dark">
-                  Schedule the Free Demo
+                  {copy.demo.cta}
                 </PremiumButton>
               </div>
             </div>
             <div className="grid gap-3 sm:grid-cols-2">
-              {demoIncludes.map((item, index) => (
+              {copy.demo.includes.map((item, index) => (
                 <motion.div
                   key={item}
                   className="rounded-3xl border border-white/20 bg-white/12 p-5 backdrop-blur-xl"
@@ -890,17 +1308,17 @@ function DemoSection() {
   );
 }
 
-function SectorsSection() {
+function SectorsSection({ copy }: { copy: SiteCopy }) {
   return (
     <section id="sectors" className="section-space bg-zinc-50 scroll-mt-28">
       <div className="container-grid">
         <SectionHeading
-          eyebrow="Target sectors"
-          title="Built for Teams That Communicate Under Pressure"
-          text="The course is designed for companies where clear English has a direct impact on service quality, speed, and client confidence."
+          eyebrow={copy.sectors.eyebrow}
+          title={copy.sectors.title}
+          text={copy.sectors.text}
         />
         <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {sectors.map(({ icon, title }, index) => (
+          {copy.sectors.items.map(({ icon, title }, index) => (
             <motion.div
               key={title}
               className="neo-card group p-6"
@@ -919,17 +1337,17 @@ function SectorsSection() {
   );
 }
 
-function MethodSection() {
+function MethodSection({ copy }: { copy: SiteCopy }) {
   return (
     <section id="method" className="section-space scroll-mt-28">
       <div className="container-grid">
         <SectionHeading
-          eyebrow="Company-focused method"
-          title="Our Method: Practical, Measurable, Company-Focused"
-          text="Teacher's Talk combines a professional training process with the flexibility your company needs."
+          eyebrow={copy.method.eyebrow}
+          title={copy.method.title}
+          text={copy.method.text}
         />
         <div className="mt-14 grid gap-6 lg:grid-cols-4">
-          {methodSteps.map(({ icon, title, text }, index) => (
+          {copy.method.steps.map(({ icon, title, text }, index) => (
             <motion.div
               key={title}
               className="relative rounded-[2rem] border border-zinc-200 bg-white p-6 shadow-[0_20px_60px_rgba(23,23,23,.08)]"
@@ -950,14 +1368,14 @@ function MethodSection() {
   );
 }
 
-function BeforeAfterSection() {
+function BeforeAfterSection({ copy }: { copy: SiteCopy }) {
   return (
     <section className="section-space bg-brand-warm">
       <div className="container-grid">
         <SectionHeading
-          eyebrow="Visible transformation"
-          title="From Unclear Messages to Professional Client Communication"
-          text="Your employees do not need abstract theory. They need language they can use the same day with clients, partners, and managers."
+          eyebrow={copy.beforeAfter.eyebrow}
+          title={copy.beforeAfter.title}
+          text={copy.beforeAfter.text}
         />
         <div className="mt-12 grid gap-6 lg:grid-cols-2">
           <motion.div
@@ -966,11 +1384,11 @@ function BeforeAfterSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <p className="mb-4 text-xs font-black uppercase text-brand-red">Before</p>
+            <p className="mb-4 text-xs font-black uppercase text-brand-red">{copy.beforeAfter.before}</p>
             <div className="rounded-3xl bg-zinc-100 p-6 text-2xl font-black leading-snug text-zinc-500">
               “Shipment late. Customs problem. We send soon.”
             </div>
-            <p className="mt-5 leading-7 text-zinc-600">Short, unclear, and risky for client confidence.</p>
+            <p className="mt-5 leading-7 text-zinc-600">{copy.beforeAfter.beforeText}</p>
           </motion.div>
           <motion.div
             className="rounded-[2rem] border border-red-200 bg-gradient-to-br from-white to-red-50 p-6 shadow-glow"
@@ -978,12 +1396,12 @@ function BeforeAfterSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <p className="mb-4 text-xs font-black uppercase text-brand-deep">After</p>
+            <p className="mb-4 text-xs font-black uppercase text-brand-deep">{copy.beforeAfter.after}</p>
             <div className="rounded-3xl bg-white p-6 text-xl font-bold leading-9 text-brand-ink shadow-inner">
               “Dear Mr. Ahmed, we apologize for the inconvenience. Your shipment has been delayed due to customs
               clearance. Our team is following up and will update you as soon as we receive confirmation.”
             </div>
-            <p className="mt-5 leading-7 text-zinc-600">Professional, specific, and reassuring.</p>
+            <p className="mt-5 leading-7 text-zinc-600">{copy.beforeAfter.afterText}</p>
           </motion.div>
         </div>
       </div>
@@ -991,19 +1409,19 @@ function BeforeAfterSection() {
   );
 }
 
-function WhySection() {
+function WhySection({ copy }: { copy: SiteCopy }) {
   return (
     <section className="section-space">
       <div className="container-grid">
         <div className="grid gap-10 lg:grid-cols-[.9fr_1.1fr] lg:items-center">
           <SectionHeading
             align="left"
-            eyebrow="Why Teacher's Talk"
-            title="Why Companies Choose Teacher's Talk"
-            text="The training is premium because it is specific, practical, measurable, and delivered in person by teachers who understand professional communication."
+            eyebrow={copy.why.eyebrow}
+            title={copy.why.title}
+            text={copy.why.text}
           />
           <div className="grid gap-3 sm:grid-cols-2">
-            {reasons.map((reason, index) => (
+            {copy.why.reasons.map((reason, index) => (
               <motion.div
                 key={reason}
                 className="flex items-center gap-3 rounded-3xl border border-zinc-200 bg-white p-4 shadow-sm"
@@ -1025,18 +1443,18 @@ function WhySection() {
   );
 }
 
-function TestimonialsSection() {
+function TestimonialsSection({ copy }: { copy: SiteCopy }) {
   return (
     <section className="section-space bg-brand-ink text-white">
       <div className="container-grid">
         <SectionHeading
-          eyebrow="Credible results"
-          title="What Managers Notice First"
-          text="The difference is practical: clearer emails, calmer calls, better operational updates, and stronger confidence with clients."
+          eyebrow={copy.testimonials.eyebrow}
+          title={copy.testimonials.title}
+          text={copy.testimonials.text}
           tone="dark"
         />
         <div className="mt-12 grid gap-5 lg:grid-cols-3">
-          {testimonials.map((testimonial, index) => (
+          {copy.testimonials.items.map((testimonial, index) => (
             <motion.figure
               key={testimonial.name}
               className="dark-card p-7"
@@ -1063,7 +1481,7 @@ function TestimonialsSection() {
   );
 }
 
-function FinalCtaSection() {
+function FinalCtaSection({ copy }: { copy: SiteCopy }) {
   return (
     <section className="section-space relative overflow-hidden">
       <div className="ambient-field left-1/2 top-0 h-[34rem] w-[34rem] -translate-x-1/2 bg-red-100/90" />
@@ -1075,15 +1493,15 @@ function FinalCtaSection() {
           viewport={{ once: true }}
         >
           <h2 className="text-balance text-3xl font-black leading-tight text-brand-ink sm:text-5xl">
-            Ready to Improve Your Team&apos;s Business English?
+            {copy.finalCta.title}
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-zinc-600">
-            Book a short meeting with Teacher&apos;s Talk and get a free 1-hour demo lesson for your team.
+            {copy.finalCta.text}
           </p>
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-            <PremiumButton target="demo">Book Free Demo</PremiumButton>
+            <PremiumButton target="demo">{copy.finalCta.primary}</PremiumButton>
             <PremiumButton target="contact" variant="secondary">
-              Contact Us
+              {copy.finalCta.secondary}
             </PremiumButton>
           </div>
         </motion.div>
@@ -1092,7 +1510,7 @@ function FinalCtaSection() {
   );
 }
 
-function ContactSection() {
+function ContactSection({ copy }: { copy: SiteCopy }) {
   const [form, setForm] = useState<FormState>({
     name: "",
     company: "",
@@ -1107,12 +1525,12 @@ function ContactSection() {
 
   const validate = () => {
     const nextErrors: Partial<Record<keyof FormState, string>> = {};
-    if (!form.name.trim()) nextErrors.name = "Please enter your name.";
-    if (!form.company.trim()) nextErrors.company = "Please enter your company name.";
-    if (!/^\S+@\S+\.\S+$/.test(form.email)) nextErrors.email = "Please enter a valid email.";
-    if (!form.phone.trim()) nextErrors.phone = "Please enter your phone number.";
-    if (!form.need) nextErrors.need = "Please select a training need.";
-    if (form.message.trim().length < 10) nextErrors.message = "Please add a short message.";
+    if (!form.name.trim()) nextErrors.name = copy.contact.errors.name;
+    if (!form.company.trim()) nextErrors.company = copy.contact.errors.company;
+    if (!/^\S+@\S+\.\S+$/.test(form.email)) nextErrors.email = copy.contact.errors.email;
+    if (!form.phone.trim()) nextErrors.phone = copy.contact.errors.phone;
+    if (!form.need) nextErrors.need = copy.contact.errors.need;
+    if (form.message.trim().length < 10) nextErrors.message = copy.contact.errors.message;
     setErrors(nextErrors);
     return Object.keys(nextErrors).length === 0;
   };
@@ -1158,13 +1576,11 @@ function ContactSection() {
       }
 
       setSubmitStatus("success");
-      setSubmitMessage("Thank you. Your request was sent and Teacher's Talk can now follow up with demo details.");
+      setSubmitMessage(copy.contact.success);
       setForm({ name: "", company: "", email: "", phone: "", need: "", message: "" });
     } catch {
       setSubmitStatus("error");
-      setSubmitMessage(
-        "We could not send the request right now. Please try again, email info@teacherstalk.org, or use the WhatsApp button."
-      );
+      setSubmitMessage(copy.contact.failure);
     }
   };
 
@@ -1188,16 +1604,16 @@ function ContactSection() {
           <div>
             <SectionHeading
               align="left"
-              eyebrow="Contact"
-              title="Book a Meeting or Request the Free Demo"
-              text="Tell us what your team needs. Teacher's Talk will help you choose the right starting point for practical Business English training."
+              eyebrow={copy.contact.eyebrow}
+              title={copy.contact.title}
+              text={copy.contact.text}
             />
             <div className="mt-8 grid gap-4">
               {[
-                { icon: Phone, label: "Phone", value: "0700318140" },
-                { icon: MailCheck, label: "Email", value: "info@teacherstalk.org" },
+                { icon: Phone, label: copy.contact.details[0].label, value: copy.contact.details[0].value },
+                { icon: MailCheck, label: copy.contact.details[1].label, value: copy.contact.details[1].value },
                 { icon: MapPin, label: "Location", value: "Rabat-Salé-Kenitra, Morocco" },
-                { icon: Building2, label: "Availability", value: "In-person company training" }
+                { icon: Building2, label: copy.contact.details[3].label, value: copy.contact.details[3].value }
               ].map(({ icon, label, value }) => (
                 <div key={label} className="neo-card flex items-center gap-4 p-5">
                   <IconBadge icon={icon} />
@@ -1227,7 +1643,7 @@ function ContactSection() {
             />
             <div className="grid gap-5 sm:grid-cols-2">
               <Field
-                label="Name"
+                label={copy.contact.labels.name}
                 name="name"
                 value={form.name}
                 error={errors.name}
@@ -1236,7 +1652,7 @@ function ContactSection() {
                 disabled={isSubmitting}
               />
               <Field
-                label="Company"
+                label={copy.contact.labels.company}
                 name="company"
                 value={form.company}
                 error={errors.company}
@@ -1245,7 +1661,7 @@ function ContactSection() {
                 disabled={isSubmitting}
               />
               <Field
-                label="Email"
+                label={copy.contact.labels.email}
                 name="email"
                 type="email"
                 value={form.email}
@@ -1255,7 +1671,7 @@ function ContactSection() {
                 disabled={isSubmitting}
               />
               <Field
-                label="Phone"
+                label={copy.contact.labels.phone}
                 name="phone"
                 type="tel"
                 value={form.phone}
@@ -1265,7 +1681,7 @@ function ContactSection() {
                 disabled={isSubmitting}
               />
               <label className="sm:col-span-2">
-                <span className="form-label">Preferred training need</span>
+                <span className="form-label">{copy.contact.labels.need}</span>
                 <select
                   className={`form-input ${errors.need ? "border-brand-red" : ""}`}
                   name="training_need"
@@ -1274,8 +1690,8 @@ function ContactSection() {
                   aria-invalid={Boolean(errors.need)}
                   disabled={isSubmitting}
                 >
-                  <option value="">Select a training need</option>
-                  {trainingNeeds.map((need) => (
+                  <option value="">{copy.contact.labels.needPlaceholder}</option>
+                  {copy.contact.needs.map((need) => (
                     <option key={need} value={need}>
                       {need}
                     </option>
@@ -1284,13 +1700,13 @@ function ContactSection() {
                 {errors.need && <span className="form-error">{errors.need}</span>}
               </label>
               <label className="sm:col-span-2">
-                <span className="form-label">Message</span>
+                <span className="form-label">{copy.contact.labels.message}</span>
                 <textarea
                   className={`form-input min-h-36 resize-y ${errors.message ? "border-brand-red" : ""}`}
                   name="message"
                   value={form.message}
                   onChange={(event) => updateField("message", event.target.value)}
-                  placeholder="Tell us about your team, sector, and training goals."
+                  placeholder={copy.contact.labels.messagePlaceholder}
                   aria-invalid={Boolean(errors.message)}
                   disabled={isSubmitting}
                 />
@@ -1302,7 +1718,7 @@ function ContactSection() {
               type="submit"
               disabled={isSubmitting}
             >
-              <span>{isSubmitting ? "Sending Request..." : "Send Demo Request"}</span>
+              <span>{isSubmitting ? copy.contact.labels.sending : copy.contact.labels.submit}</span>
               <Send className={`h-4 w-4 ${isSubmitting ? "animate-pulse" : ""}`} />
             </button>
             <AnimatePresence>
@@ -1313,7 +1729,7 @@ function ContactSection() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 12 }}
                 >
-                  <p className="font-black">Request sent.</p>
+                  <p className="font-black">{copy.contact.labels.successTitle}</p>
                   <p className="mt-1 text-sm">{submitMessage}</p>
                 </motion.div>
               )}
@@ -1324,7 +1740,7 @@ function ContactSection() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 12 }}
                 >
-                  <p className="font-black">Request not sent.</p>
+                  <p className="font-black">{copy.contact.labels.errorTitle}</p>
                   <p className="mt-1 text-sm">{submitMessage}</p>
                 </motion.div>
               )}
@@ -1373,28 +1789,23 @@ function Field({
   );
 }
 
-function Footer() {
+function Footer({ copy }: { copy: SiteCopy }) {
   return (
     <footer className="bg-brand-ink px-4 py-12 text-white">
       <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1.2fr_.8fr_.8fr_.9fr]">
         <div>
           <Logo compact />
           <p className="mt-5 max-w-sm leading-7 text-zinc-400">
-            Premium Business English training for logistics, transport, supply chain, customer service, and corporate teams.
+            {copy.footer.text}
           </p>
         </div>
-        <FooterLinks title="Quick links" links={navItems.map(([label, id]) => ({ label, id }))} />
+        <FooterLinks title={copy.footer.quickLinks} links={copy.navItems.map(([label, id]) => ({ label, id }))} />
         <FooterLinks
-          title="Services"
-          links={[
-            { label: "Logistics English course", id: "program" },
-            { label: "Corporate English training", id: "program" },
-            { label: "Free demo lesson", id: "demo" },
-            { label: "Company progress report", id: "method" }
-          ]}
+          title={copy.footer.services}
+          links={copy.footer.serviceLinks}
         />
         <div>
-          <h3 className="text-sm font-black uppercase text-white">Contact details</h3>
+          <h3 className="text-sm font-black uppercase text-white">{copy.footer.contactDetails}</h3>
           <div className="mt-5 space-y-3 text-sm text-zinc-400">
             <p>0700318140</p>
             <p>info@teacherstalk.org</p>
@@ -1411,7 +1822,7 @@ function Footer() {
   );
 }
 
-function FooterLinks({ title, links }: { title: string; links: { label: string; id: string }[] }) {
+function FooterLinks({ title, links }: { title: string; links: readonly { label: string; id: string }[] }) {
   return (
     <div>
       <h3 className="text-sm font-black uppercase text-white">{title}</h3>
@@ -1430,7 +1841,7 @@ function FooterLinks({ title, links }: { title: string; links: { label: string; 
   );
 }
 
-function FloatingActions() {
+function FloatingActions({ copy }: { copy: SiteCopy }) {
   const [showBackToTop, setShowBackToTop] = useState(false);
 
   useEffect(() => {
@@ -1452,8 +1863,8 @@ function FloatingActions() {
             type="button"
             className="grid h-12 w-12 place-items-center rounded-full border border-zinc-200 bg-white text-brand-ink shadow-[0_18px_48px_rgba(23,23,23,.18)] transition hover:-translate-y-0.5 hover:bg-zinc-100 focus-ring"
             onClick={() => scrollToSection("home")}
-            aria-label="Back to top"
-            title="Back to top"
+            aria-label={copy.floating.backToTop}
+            title={copy.floating.backToTop}
             initial={{ opacity: 0, y: 16, scale: 0.86 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 16, scale: 0.86 }}
@@ -1476,7 +1887,7 @@ function FloatingActions() {
         target="_blank"
         rel="noreferrer"
         className="group relative grid h-16 w-16 place-items-center rounded-full bg-white shadow-[0_22px_70px_rgba(20,122,58,.28)] focus-ring"
-        aria-label="Contact Teacher's Talk on WhatsApp"
+        aria-label={copy.floating.whatsapp}
         title="WhatsApp"
         initial={{ opacity: 0, y: 18, scale: 0.86 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -1500,26 +1911,29 @@ function FloatingActions() {
 }
 
 export default function App() {
+  const [language, setLanguage] = useState<Language>("en");
+  const copy = siteCopy[language];
+
   return (
-    <div className="min-h-screen overflow-x-hidden bg-brand-warm text-brand-ink antialiased">
-      <Navbar />
+    <div className="min-h-screen overflow-x-hidden bg-brand-warm text-brand-ink antialiased" lang={language}>
+      <Navbar copy={copy} language={language} setLanguage={setLanguage} />
       <main>
-        <Hero />
-        <TrustBar />
-        <ProblemSection />
-        <SolutionSection />
-        <ProgramSection />
-        <DemoSection />
-        <SectorsSection />
-        <MethodSection />
-        <BeforeAfterSection />
-        <WhySection />
-        <TestimonialsSection />
-        <FinalCtaSection />
-        <ContactSection />
+        <Hero copy={copy} />
+        <TrustBar copy={copy} />
+        <ProblemSection copy={copy} />
+        <SolutionSection copy={copy} />
+        <ProgramSection copy={copy} />
+        <DemoSection copy={copy} />
+        <SectorsSection copy={copy} />
+        <MethodSection copy={copy} />
+        <BeforeAfterSection copy={copy} />
+        <WhySection copy={copy} />
+        <TestimonialsSection copy={copy} />
+        <FinalCtaSection copy={copy} />
+        <ContactSection copy={copy} />
       </main>
-      <FloatingActions />
-      <Footer />
+      <FloatingActions copy={copy} />
+      <Footer copy={copy} />
     </div>
   );
 }
