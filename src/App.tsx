@@ -788,7 +788,7 @@ function ProgramSection() {
             <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
               {[
                 ["Format", "30 hours in-person"],
-                ["Schedule", "2 sessions/week × 2 hours × 7.5 weeks"],
+                ["Schedule", "3 sessions/week x 2 hours x 5 weeks"],
                 ["Ideal group", "8 to 14 employees"],
                 ["Best level", "A2+ to B1/B2 employees"]
               ].map(([label, value]) => (
